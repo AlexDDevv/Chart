@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    width: 50%;
+}
+.container .balance-container {
+    background: hsl(10, 79%, 65%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.container .balance-container .balance p {
+    color: hsl(33, 100%, 98%);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.container .balance-container .balance span {
+    color: hsl(33, 100%, 98%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container .balance-container .logo {
+    width: 60px;
+    height: 40px;
+}
+.container .balance-container .logo img {
+    width: 100%;
+}
+.container .canva-container {
+    background: hsl(33, 100%, 98%);
+    padding: 25px 30px;
+    border-radius: 15px;
+}
+.container .canva-container h1 {
+    color: hsl(25, 47%, 15%);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.container .canva-container .canva {
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+.container .canva-container .canva canvas {
+    width: 100%;
+}
+.container .canva-container .bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.container .canva-container .bottom .left p {
+    color: hsl(28, 10%, 53%);
+    font-size: 0.8rem;
+}
+.container .canva-container .bottom .left span {
+    color: hsl(25, 47%, 15%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container .canva-container .bottom .right {
+    text-align: right;
+    padding-bottom: 5px;
+}
+.container .canva-container .bottom .right span {
+    color: hsl(25, 47%, 15%);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.container .canva-container .bottom .right p {
+    color: hsl(28, 10%, 53%);
+    font-size: 0.8rem;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 90%;
+    }
+    .container .balance-container {
+        padding: 20px;
+    }
+    .container .canva-container {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 450px) {
+    body {
+        overflow: hidden;
+    }
+    .container .canva-container h1 {
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+}
